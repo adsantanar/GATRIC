@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GATRIC - Gestión Integral de Residuos</title>
+    <title>GATRIC - Vaciamos y Gestionamos Residuos | Canarias</title>
+    <meta name="description" content="Vaciamos naves, almacenes y viviendas con certificado legal. Solicita presupuesto sin costo para retirada de residuos en Canarias.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -438,16 +439,16 @@
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container hero-content">
-            <h1>GATRIC: Vaciamos y gestionamos residuos <span style="color: var(--naranja);">con garantía legal</span></h1>
-            <p>Presupuesto gratis, retirada programada y certificado de disposición final</p>
-            <a href="#contacto" class="btn">Consulta sin costo</a>
+            <h1>Vaciamos naves, almacenes y viviendas <span style="color: var(--naranja);">en tiempo récord</span></h1>
+            <p>Presupuesto sin costo, recogida programada y documentación legal para tu tranquilidad</p>
+            <a href="#contacto" class="btn">Solicitar presupuesto</a>
         </div>
     </section>
 
     <!-- Problema + Solución -->
     <section class="problem-solution" id="como-funciona">
         <div class="container">
-            <h2 class="section-title">¿Atascado con residuos por un cierre, mudanza o limpieza?</h2>
+            <h2 class="section-title">¿Necesitas vaciar un espacio pero no sabes cómo gestionar los residuos?</h2>
             <div class="benefits">
                 <div class="benefit">
                     <div class="benefit-icon">
@@ -468,7 +469,7 @@
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Rapidez</h3>
-                    <p>Servicio urgente disponible en 24-48 horas. Más de 500 naves vaciadas en toda la región.</p>
+                    <p>Servicio urgente disponible en 24-48 horas. Más de 500 naves vaciadas en Canarias.</p>
                 </div>
             </div>
         </div>
@@ -487,40 +488,47 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="service-content">
-                        <h3>Retirada de residuos no peligrosos</h3>
-                        <p>Gestión autorizada todo tipo de residuos no peligrosos, electrónicos y otros materiales regulados.</p>
+                        <h3>Limpieza por cierre de actividad</h3>
+                        <p>Deja el espacio listo para traspaso o venta, sin rastro de residuos.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="service-content">
-                        <h3>Certificación ambiental</h3>
-                        <p>Documentación legal para tu tranquilidad. Certificados de disposición final válidos para auditorías.</p>
+                        <h3>Gestión documental</h3>
+                        <p>Certificado de disposición final para cumplir con la normativa (Ley 22/2011).</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Contacto -->
+    <!-- Formulario de Contacto CONFIGURADO PARA TU EMAIL -->
     <section class="contact-form" id="contacto">
         <div class="container">
             <div class="form-container">
                 <h2>¿Listo para deshacerte de los residuos?</h2>
-                <form action="#" method="POST">
+                <form action="https://formsubmit.co/asantana@chatarrascanarias.es" method="POST">
+                    <!-- Configuración del formulario -->
+                    <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> <!-- Cambia por tu URL -->
+                    <input type="hidden" name="_subject" value="Nueva solicitud GATRIC">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <!-- Campos del formulario -->
                     <div class="form-group">
                         <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="Nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="Teléfono" required>
                     </div>
                     <div class="form-group">
                         <label for="residue">Tipo de residuo</label>
-                        <select id="residue" name="residue" required>
+                        <select id="residue" name="Tipo de residuo" required>
                             <option value="">Selecciona una opción</option>
                             <option value="muebles">Muebles y enseres</option>
                             <option value="escombros">Escombros</option>
@@ -530,11 +538,11 @@
                     </div>
                     <div class="form-group">
                         <label for="date">Fecha estimada de recogida</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="Fecha de recogida">
                     </div>
                     <div class="form-group">
                         <label for="message">Descripción del espacio a vaciar (opcional)</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="Mensaje"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Solicitar presupuesto en 24h</button>
                 </form>
